@@ -5,46 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klingon Lorem Ipsum</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Open Library Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-
-<body>
-    <!-- Header begins here! -->
-    <header class="wrapper">
-        <!-- h1 and svg begin here -->
-        <h1><img src="./assets/icons8-klingon-head.svg" alt="cartoon of worf's head">Welcome to the Klingon Lorem Ipsum
-        </h1>
-        <!-- h2 begins here -->
-        <h2>Use the input to generate random klingon words!</h2>
+<body class="wrapper">
+    <!-- Header Begins here -->
+    <header class="">
+        <h1>Welcome to Book Suggester!</h1>
+        <h2>Search a subject below to receive some suggestions from Open Library</h2>
     </header>
     <!-- main begins here -->
-    <main class="wrapper">
+    <main>
         <!-- form begins here -->
         <form action="">
-            <div>
-                <label for="numOfWords">How many words would you like?</label>
-                <input type="number" id="numOfWords" value="20" name="numOfWords">
-            </div>
-            <button class="klingonSubmit" type="submit" id="btnSubmit">Generate</button>
-            <button type="reset" id="reset">Reset</button>
+            <label for="subject">What Subject?</label>
+            <input type="text" id="searchSubject" required placeholder="Subject Here">
+            <button type="submit">submit</button>
         </form>
-        <!-- Section display for klingon begins here -->
+        <!-- section beings here -->
         <section>
-            <div class="container">
-                <p></p>
+            <!-- book display begins here -->
+            <div class="bookDisplay">
+
             </div>
+            <!-- book icon image here -->
+            <img src="./assets/read-book-icon.svg" alt="little icon of a book" class="bookIcon">
         </section>
     </main>
     <!-- footer begins here -->
-    <footer class="wrapper">
-        <h4>Created at Juno College</h4>
+    <footer>
+        <a href="https://junocollege.com/">Created at Juno College</a>
     </footer>
-    <!-- script tags begin here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
